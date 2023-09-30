@@ -4,6 +4,7 @@ import torch
 from loguru import logger
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False  # 防止返回中文乱码
 
@@ -80,4 +81,4 @@ if __name__ == '__main__':
     print("Total model params: %.2fM" % (total / 1e6))
     model.eval()
 
-    app.run(port=port)
+    app.run(host=0.0.0.0, port=port)
