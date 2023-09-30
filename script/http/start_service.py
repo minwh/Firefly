@@ -49,7 +49,7 @@ if __name__ == '__main__':
     # model_name_or_path = 'YeungNLP/firefly-baichuan-13b'
     model_name_or_path = 'internlm/internlm-20b'
     log_file = 'service_history.txt'
-    port = 8877
+    port = 8081
     device = 'cuda'
     logger.info(f"Starting to load the model {model_name_or_path} into memory")
 
