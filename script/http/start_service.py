@@ -81,4 +81,4 @@ if __name__ == '__main__':
     print("Total model params: %.2fM" % (total / 1e6))
     model.eval()
 
-    app.run(host=0.0.0.0, port=port)
+    app.run(host='0.0.0.0', port=port)
