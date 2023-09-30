@@ -46,7 +46,8 @@ def ds_llm():
 
 if __name__ == '__main__':
     # 参数设置
-    model_name_or_path = 'YeungNLP/firefly-baichuan-13b'
+    # model_name_or_path = 'YeungNLP/firefly-baichuan-13b'
+    model_name_or_path = 'internlm/internlm-20b'
     log_file = 'service_history.txt'
     port = 8877
     device = 'cuda'
